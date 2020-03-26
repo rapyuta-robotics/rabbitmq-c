@@ -959,7 +959,7 @@ int amqp_simple_wait_frame_noblock(amqp_connection_state_t state,
   }
 }
 
-static int amqp_simple_wait_method_list(amqp_connection_state_t state,
+int amqp_simple_wait_method_list(amqp_connection_state_t state,
                                         amqp_channel_t expected_channel,
                                         amqp_method_number_t *expected_methods,
                                         amqp_time_t deadline,
